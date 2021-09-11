@@ -21,6 +21,3 @@ Voici les fonctionnalités principales que devra proposer la première version d
 Lorsque que l'enchère sera confirmée par l'utilisateur, celle-ci devra être ajoutée dans la BD. On vérifiera ensuite notamment que le prix est bien mis à jour dans le listing de la page principale et dans la description de l'objet.
 7. Objets acquis: ajoutez un lien sur la page principale vers une page qui affichera pour l'utilisateur actuellement identifié les objets dont il a emporté la vente (donc tous les objets dont la date de fin est dépassée et pour lesquels la dernière enchère a été effectuée par l'utilisateur en question).
 8. Vente d'objets: ajouter un nouveau lien sur la page principale renvoyant vers une page permettant de mettre en vente un nouvel objet.
-=======
-
->>>>>>> 55e22988be72eb1b3fb04b3b0c24708af1cca352
