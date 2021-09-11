@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mon site de vente aux encheres
 
 Le sujet retenu est la réalisation d’un site de ventes aux enchères de style eBay. Toute personne inscrite sur le site peut participer aux enchères. Les utilisateurs du site devront donc d'abord s'inscrire avant de pouvoir vendre ou acheter des objets. Le site proposera plusieurs services à l'utilisateur : achat de bien (en enchérissant, par achat immédiat si le vendeur propose cette option), recherche d'un bien dans une base de données (par catégorie, par vendeur, ...), contact du vendeur par mail pour obtenir plus d'informations, vente d'un bien (neuf, d'occasion, recherche d'un autre utilisateur dans un annuaire, évaluations des autres utilisateurs au cours des transactions qu'il aura eues avec eux)...
@@ -20,3 +21,6 @@ Voici les fonctionnalités principales que devra proposer la première version d
 Lorsque que l'enchère sera confirmée par l'utilisateur, celle-ci devra être ajoutée dans la BD. On vérifiera ensuite notamment que le prix est bien mis à jour dans le listing de la page principale et dans la description de l'objet.
 7. Objets acquis: ajoutez un lien sur la page principale vers une page qui affichera pour l'utilisateur actuellement identifié les objets dont il a emporté la vente (donc tous les objets dont la date de fin est dépassée et pour lesquels la dernière enchère a été effectuée par l'utilisateur en question).
 8. Vente d'objets: ajouter un nouveau lien sur la page principale renvoyant vers une page permettant de mettre en vente un nouvel objet.
+=======
+
+>>>>>>> 55e22988be72eb1b3fb04b3b0c24708af1cca352
