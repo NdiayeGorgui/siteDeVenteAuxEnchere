@@ -1,4 +1,4 @@
-Mon site de vente aux encheres
+#Mon site de vente aux encheres
 
 Le sujet retenu est la réalisation d’un site de ventes aux enchères de style eBay. Toute personne inscrite sur le site peut participer aux enchères. Les utilisateurs du site devront donc d'abord s'inscrire avant de pouvoir vendre ou acheter des objets. Le site proposera plusieurs services à l'utilisateur : achat de bien (en enchérissant, par achat immédiat si le vendeur propose cette option), recherche d'un bien dans une base de données (par catégorie, par vendeur, ...), contact du vendeur par mail pour obtenir plus d'informations, vente d'un bien (neuf, d'occasion, recherche d'un autre utilisateur dans un annuaire, évaluations des autres utilisateurs au cours des transactions qu'il aura eues avec eux)...
 Modélisation et création de la BD
