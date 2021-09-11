@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Evaluation>
+           @using Vente_Aux_Enchere_Site.Models
+@{
+    ViewBag.Title = "Evaluation des Vendeurs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Evaluation des Vendeurs</h2>
+
+
+@foreach (var groupnote in Model.GroupBy(i => i.Utilisateur.Pseudo))
+{
+    <div class="well">
+        <div class="">
+            @groupnote.Key
+            @foreach (Evaluation e in groupnote)
+	{
+		 <p class="text-muted">Note:@e.Note  @e.Comentaire</p>
+    @*<p class="text-muted">
+        @if (e.Note > 5)
+    { @groupnote.Count() } Evaluation(s) Positive(s)
+    </p>*@
+
+    }
+            <p class="text-muted">Nombre d'évaluation: @groupnote.Count()</p>
+            
+        </div>
+    </div>
+
+}

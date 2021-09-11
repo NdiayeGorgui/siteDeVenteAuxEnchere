@@ -1,0 +1,65 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Bien
+@{
+    ViewBag.Title = "Index1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("ModifierEnchere1");}
+    </div>
+    
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("DetailEnchere1", "Enchere");}
+    </div>
+       
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("AfficherBien1");}
+    </div>
+</div>
+
+
+
+
+@section scripts{
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+   
+    document.getElementById('titre').style.color = 'orange';
+    document.getElementById('titre').style.fontSize = '20px';
+    document.getElementById('titre').style.textAlign = 'center'
+
+    document.getElementById('titre1').style.color = 'orange';
+    document.getElementById('titre1').style.fontSize = '20px';
+    //document.getElementById('titre1').style.textAlign = 'center'
+
+    document.getElementById('titre2').style.color = 'orange';
+    document.getElementById('titre2').style.fontSize = '20px';
+    document.getElementById('titre2').style.textAlign = 'center'
+
+</script>
+
+
+
+
+
+
+
+    <script>
+        $(function () {
+            var succesMessage = '@TempData["SuccessMessage"]'
+            if (succesMessage != '')
+                alertify.success(succesMessage);
+        });
+
+        function Delete(id) {
+            alertify.confirm('Vente aux enchères', 'Voulez vous enlever ce produit ?', function () {
+                window.location.href = '@Url.Action("RemoveBien", "Bien")/' + id;
+            }, null);
+        }
+    </script>
+}

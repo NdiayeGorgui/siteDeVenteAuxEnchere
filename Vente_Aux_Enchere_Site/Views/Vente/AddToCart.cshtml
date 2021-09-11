@@ -1,0 +1,20 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Bien
+
+@{
+    ViewBag.Title = "AddToCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AddToCart</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <img src="@Model.URL_Photo/@Model.Photo " />
+        <h3>Nom du produit:@Model.Designation</h3>
+        <h3>prix du produit:@Model.PrixInitial</h3>
+        @*<h3>Designation du produit:@Model.Designation</h3>*@
+        <input type="number" min="1" max="10" id="qty" name="qty"  />
+        <input type="submit" value="Envoyer" />
+    </div>
+}

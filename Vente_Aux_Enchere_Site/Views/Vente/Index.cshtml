@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Bien>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="btn btn-danger">
+
+    @Html.ActionLink("Afficher le panier", "Checkout", "Vente")
+    <h3>@TempData["Total"]</h3>
+</div>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-3">
+        @*<img class="img-circle img-responsive" src="@Url.Content(item.ImageProduit)" />*@
+        @*<img class="img-responsive" src="@item.URL_Photo/@item.Photo " />*@
+       
+        <span class=" pull-left label label-primary" style="color:#ffffff"><h5> $ @item.PrixInitial  </h5></span>
+        <div class="lead"><img src="@item.URL_Photo/@item.Photo " class="img-responsive" /></div>
+        <div>@item.Designation</div>
+        @*<span>@item.PrixInitial</span>*@
+        @*<span>@item.Designation</span>*@
+        <span></span>
+        @*<div class="btn btn-info">@Html.ActionLink("Acheter Maintenant", "AddToCart", new { id = @item.BienId })</div>*@
+        <div><a href="~/Vente/AddToCart/@item.BienId" class=" btn btn-danger"><strong>  Acheter Maintenant</strong> </a></div><br />
+    </div>
+}
+
+

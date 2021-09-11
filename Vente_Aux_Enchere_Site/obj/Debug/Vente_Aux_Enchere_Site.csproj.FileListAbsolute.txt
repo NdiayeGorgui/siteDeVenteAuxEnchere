@@ -1,0 +1,159 @@
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll.config
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.pdb
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\WebGrease.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.pdb
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.pdb
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c0.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.GenerateResource.Cache
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c1.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c2.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c3.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c4.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c5.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c6.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c7.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c8.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c9.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c10.resources
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.dll
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.xml
+C:\Users\user\documents\visual studio 2013\Projects\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll.config
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.pdb
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\WebGrease.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.pdb
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.xml
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csprojAssemblyReference.cache
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c0.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c1.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c2.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c3.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c4.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c5.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c6.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c7.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c8.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c9.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c10.resources
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.GenerateResource.cache
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.CoreCompileInputs.cache
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.CopyComplete
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.dll
+D:\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.pdb
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll.config
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Vente_Aux_Enchere_Site.pdb
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\WebGrease.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\EntityFramework.SqlServer.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\PagedList.Mvc.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Helpers.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Mvc.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Optimization.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.Razor.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\System.Web.WebPages.Razor.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Antlr3.Runtime.pdb
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Extensions.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.EntityFramework.Plus.EF6.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Z.Expressions.Eval.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\bin\Newtonsoft.Json.xml
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c0.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c1.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c2.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c3.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c4.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c5.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c6.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c7.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c8.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c9.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.Migrations.c10.resources
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.GenerateResource.cache
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.CoreCompileInputs.cache
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.csproj.CopyComplete
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.dll
+C:\Users\gogo2\Desktop\ASP\2\Vente_Aux_Enchere_Site\Vente_Aux_Enchere_Site\obj\Debug\Vente_Aux_Enchere_Site.pdb

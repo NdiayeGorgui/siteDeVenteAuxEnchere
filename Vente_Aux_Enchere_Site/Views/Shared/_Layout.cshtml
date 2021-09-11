@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Site de Vente Aux Enchères</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/alertifyjs/themes/default.min.css" rel="stylesheet" />
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/MainLayOut.css" rel="stylesheet" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    @*<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>*@
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Achat Enchères", "Catalogue", "Bien", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Vente Enchères", "Index", "Bien")</li>
+                    <li>@Html.ActionLink("Vente Imédiate", "ListeImediat", "Vente")</li>
+                    @*<li>@Html.ActionLink("IndexViewModel", "IndexViewModel", "Bien")</li>*@
+                  
+                    @if (User.IsInRole("Administrateur"))
+                    {
+                        <li>@Html.ActionLink("Ajout Categorie", "Index", "Categorie")</li>
+                        <li>@Html.ActionLink("Encheres dépassées", "EnchereDepasse", "Bien")</li>
+                       <li>@Html.ActionLink("Toutes les Encheres", "EnchereParProduit", "Enchere")</li>
+                    }
+
+                  
+                    
+                  
+                  
+                   
+         
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+
+                        if (User.IsInRole("User"))
+                        {
+                            @*<li>@Html.ActionLink("Achat Imediat", "Index", "Produit")</li>*@
+                            <li>@Html.ActionLink("Achat Imediat", "Index", "Vente")</li>
+                            <li>@Html.ActionLink("Enchere Remporté", "EnchereRemporte", "Enchere")</li>
+                            <li>@Html.ActionLink("Mon Compte", "MesEncheres", "Enchere")</li>
+                        
+                        }
+
+                        <li><a>Bienvenue @User.Identity.Name</a></li>
+    <li>@Html.ActionLink("Se Déconnecter", "LogOut", "Utilisateur")</li>
+                    }
+                    else
+                    {
+
+                      <li>@Html.ActionLink("Se Connecter", "Login", "Utilisateur")</li>
+                    }
+
+
+</ul>
+
+                @*  @Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="row panel"> 
+            <br/>
+            <div id="cat" class="col-lg-2">
+                <img src="~/Fichier/logo.png" width="500" height="200" />
+
+                <div >@Html.ActionLink("Annuaire des Utilisateurs", "Index", "Utilisateur")</div><br />
+                <div>@Html.ActionLink("Evaluation", "Index", "Evaluation")</div><br />
+                <div>@Html.ActionLink("Evaluation des vendeurs", "Groupbynote", "Evaluation")</div><br />
+                @*<div>@Html.ActionLink("MesEncheresparproduit", "MesEncheresparproduit", "Enchere")</div><br />*@
+               
+                
+
+                <div><a href="#">un llien</a></div><br />
+                <div><a href="#">un llien</a></div>
+            </div>
+            <div id="cat" class="col-lg-9">
+                @RenderBody()
+            </div>
+
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Gogo Shopping Store</p>
+        </footer>
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/alertify.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

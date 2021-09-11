@@ -1,0 +1,66 @@
+﻿@using Vente_Aux_Enchere_Site.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+       
+        
+        <th>
+            ID
+        </th>
+
+
+
+
+        <th>
+           PRODUIT
+        </th>
+
+        <th>
+            IMMAGE 
+        </th>
+
+
+        <th>
+            PRIX
+        </th>
+        <th>
+            ACHAT
+        </th>
+        
+       
+    </tr>
+
+    @foreach (Bien P in ViewBag.listeproduit)
+    {
+        <tr>
+            <td>
+                @P.BienId
+            </td>
+
+            <td>
+                @P.Designation
+            </td>
+            <td>
+                <img src="@P.URL_Photo/@P.Photo " width="100" height="80" />
+            </td>
+            <td>
+               $ @P.PrixInitial
+            </td>
+
+            <td>
+              @Html.ActionLink("Ajouter au Panier", "Commander", "ShoppingCart", new { id=P.BienId},null) 
+            </td>
+            
+            
+            
+
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,82 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Enchere
+
+<link href="~/Content/afficher_cacher_div.css" rel="stylesheet" />
+<script src="~/Scripts/afficher_cacher_div.js"></script>
+
+<div class="col-xs-12 col-sm-12">
+    <h5 id="titre1">Détail Enchère</h5>
+    <p>
+        Nombre enchère: [ @ViewBag.nombre_enchere ]
+       
+    </p>
+
+    @if (Model.Utilisateur != null)
+    {
+        <p>
+            Meilleur Encherisseur: @Model.Utilisateur.Pseudo
+        </p>
+        <p>
+            Prix proposé: $ @Model.PrixActuel
+        </p>
+
+    }
+    <p>
+        <h3> Les meilleurs offres</h3>
+    </p>
+
+    <table>
+
+        @foreach (var item in ViewBag.liste_encherisseur)
+        {
+
+
+            <tr>
+                <td> @item.Utilisateur.Pseudo :</td>
+                <td> $ @item.PrixActuel</td>
+            </tr>
+        }
+    </table>
+
+
+
+
+    <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher la suite </span>
+    <div id="texte" class="texte">
+
+        <table>
+
+            @foreach (var item in ViewBag.liste_suite)
+            {
+
+
+                <tr>
+                    <td> @item.Utilisateur.Pseudo :</td>
+                    <td> $ @item.PrixActuel</td>
+                </tr>
+            }
+        </table>
+
+    </div>
+
+    <script type="text/javascript">
+        //<!--
+        afficher_cacher('texte');
+        //-->
+    </script>
+
+    <div class="form-group">
+        @*@Html.ActionLink("Retour à Liste", "Catalogue", "Bien")*@
+        <a href='javascript:history.go(-1)'>Retour à la page precedente</a>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+

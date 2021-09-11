@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Enchere>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Liste des Enchères</h2>
+
+
+<table class="table table-responsive table-striped ">
+    <thead class="table-heading">
+        <tr>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.DateEnchere)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bien.Designation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bien.Photo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrixActuel)
+            </th>
+           
+            <th>
+               @Html.DisplayNameFor(model => model.Utilisateur.Pseudo)
+            </th>
+            
+            
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateEnchere)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bien.Designation)
+                </td>
+                <td>
+                    <img src="@item.Bien.URL_Photo/@item.Bien.Photo " width="100" height="80" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrixActuel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Utilisateur.Pseudo)
+                </td>
+
+            </tr>
+        </tbody>
+    }
+
+</table>
+
+

@@ -1,0 +1,160 @@
+﻿@model PagedList.IPagedList<Vente_Aux_Enchere_Site.Models.Bien>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using PagedList.Mvc;
+@using PagedList;
+
+
+
+
+
+
+<br />
+<section class="body-content">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+
+            <div class="container">
+                <form method="get" asp-action="ListeImediat">
+
+                    @*<label>Mot clé:</label>*@
+                    <input type="text" name="motcle" value="@ViewBag.motcle" placeholder="Entrez le nom du Produit" /><br />
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Chercher</button>
+
+                </form> <br />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            @if (User.IsInRole("User"))
+            {
+                <a href="~/Vente/NewVente/" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span> Ajouter un Produit</a>
+            }
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+
+            Page  @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+            @Html.PagedListPager(Model, page_bien => Url.Action("ListeImediat", "Vente", new { page_bien = page_bien }))
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="table-responsive">
+            <table class="table table-responsive table-striped text-center ">
+                <thead class="table-heading">
+                    <tr>
+                        <th>PRODUIT</th>
+                        <th>PRIX </th>
+                       
+                        <th>DESCRIPTION</th>
+                        <th>ETAT DU PRODUIT</th>
+                        <th>IMAGE DU PRODUIT</th>
+
+                        <th>CATEGORIE</th>
+                        <th>DATE DE PUBLICATION</th>
+                       
+                        
+                        <th>VENDEUR</th>
+                        
+                        @if (User.IsInRole("Administrateur"))
+                        {
+                            <th colspan="2" class="text-center">OPERATIONS</th>
+                        }
+
+                    </tr>
+
+                </thead>
+
+
+
+                @foreach (var item in Model)
+                {
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Designation)
+
+                            </td>
+                            <td>
+                                $   @Html.DisplayFor(modelItem => item.PrixInitial)
+                            </td>
+                            
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EtatBien)
+                            </td>
+                            <td>
+                                <img src="@item.URL_Photo/@item.Photo " width="100" height="80" class="img-responsive" />
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Categorie.NomCategorie)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DatePublication)
+                            </td>
+                            
+
+                            
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Utilisateur.Pseudo)
+
+                            </td>
+
+                            @*<td class="align-center"> <a href="~/Bien/ModifierEnchere/@item.BienId" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-credit-card"></span> Encherir</a></td>*@
+                            @if (User.IsInRole("Administrateur"))
+                            {
+                                <td class="align-center"> <a href="~/Bien/ModifierBien/@item.BienId" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-edit"></span> Modifier</a></td>
+                            }
+                            @*<td class="align-center"> <a href="~/Bien/RemoveBien/@item.BienId" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Supprimer</a></td>*@
+
+                            @if (User.IsInRole("Administrateur"))
+                            {
+                                <td>  <a onclick="Delete(@item.BienId)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span>Supprimer</a></td>
+                            }
+
+
+                        </tr>
+                    </tbody>
+                }
+
+
+            </table>
+
+
+        </div>
+    </div>
+</section>
+
+
+@section scripts{
+    <script>
+            $(function () {
+                var succesMessage = '@TempData["SuccessMessage"]'
+                if (succesMessage != '')
+                    alertify.success(succesMessage);
+            });
+
+            function Delete(id) {
+                alertify.confirm('Vente aux enchères', 'Voulez vous supprimer cet enregistrement ?', function () {
+                    window.location.href = '@Url.Action("RemoveBien", "Bien")/' + id;
+                }, null);
+            }
+    </script>
+    
+}

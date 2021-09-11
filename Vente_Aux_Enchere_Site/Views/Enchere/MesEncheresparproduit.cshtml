@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Enchere>
+
+@using Vente_Aux_Enchere_Site.Models
+@{
+    ViewBag.Title = "MesEncheresparproduit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MesEncheresparproduit</h2>
+
+@foreach (var groupproduit in Model.GroupBy(i => i.Bien.Designation))
+{
+    <div class="">
+        <div class="">
+            Produi:@groupproduit.Key
+            @foreach (Enchere e in groupproduit)
+	{
+                <p class="text-center">Prix:@e.PrixActuel</p>
+	}
+        </div>
+    </div>

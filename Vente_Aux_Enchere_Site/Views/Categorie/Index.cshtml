@@ -1,0 +1,77 @@
+﻿@model PagedList.IPagedList<Vente_Aux_Enchere_Site.Models.Categorie>
+@{
+    ViewBag.Title = "Index";
+}
+@using PagedList.Mvc;
+@using PagedList;
+
+
+<h2>La liste des Catégories</h2>
+
+
+
+<section class="body-content">
+
+    <div class="glyphicon-plus">
+        @Html.ActionLink("Ajouter une Categorie", "NewCategorie", "Categorie")
+    </div>
+    <br />
+
+    <div class="container">
+        <form method="get" asp-action="Index">
+
+            <label>Mot clé:</label>
+            <input type="text" name="motcle" value="@ViewBag.motcle" placeholder="Entrez la Catégorie " /><br />
+            <button type="submit" class="btn btn-primary">Chercher</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table table-responsive ">
+            <thead>
+                <tr>
+                    <th class="align-center">ID</th>
+                    <th class="align-center">Catégorie </th>
+
+
+
+                </tr>
+            </thead>
+            @foreach (var data in ViewBag.liste_categorie)
+            {
+                <tbody>
+                    <tr>
+
+
+                        <td class="align-center">@data.CategorieId</td>
+                        <td class="align-center">@data.NomCategorie</td>
+
+                        @if (User.IsInRole("Administrateur"))
+                        {
+                            <td>  <a onclick="Delete(@data.CategorieId)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span>Supprimer</a></td>
+                        }
+
+                    </tr>
+                </tbody>
+            }
+        </table>
+        Page  @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+        @Html.PagedListPager(Model, page_cat => Url.Action("Index", "Categorie", new { page_cat = page_cat }))
+    </div>
+</section>
+
+
+@section scripts{
+    <script>
+        $(function () {
+            var succesMessage = '@TempData["SuccessMessage"]'
+            if (succesMessage != '')
+                alertify.success(succesMessage);
+        });
+
+        function Delete(id) {
+            alertify.confirm('Vente aux enchères', 'Voulez vous supprimer cet enregistrement ?', function () {
+                window.location.href = '@Url.Action("RemoveCategorie", "Categorie")/'+id;
+            }, null);
+        }
+    </script>
+}

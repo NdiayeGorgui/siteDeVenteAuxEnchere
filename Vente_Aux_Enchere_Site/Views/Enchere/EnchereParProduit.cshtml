@@ -1,0 +1,35 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+@foreach (var data in ViewBag.liste_EnchereParProduit)
+{
+    <div class="row col-xs-12 well">
+        <div style="background-color:#0026ff;font-size:16px;color:#ffffff">
+        Produit : @data.Designation  -  Posté par  @data.Utilisateur.Pseudo  le @data.DatePublication - Fin Enchère prévue le @data.DateVente - Prix Initial: @data.PrixInitial 
+           
+        </div>
+        <br />
+        @foreach (var produit in data.Encheres)
+        {
+          
+      
+          
+            <div class="col-xs-12 col-sm-3">
+
+                <div>Encherisseur: @produit.Utilisateur.Pseudo </div>
+                <div>Prix proposé: $ @produit.PrixActuel </div>
+                <div>Date Enchere: @produit.DateEnchere </div>
+               
+                <br /><br />
+                
+                @*<div><a href="~/Bien/ModifierEnchere/@produit.BienId" class=" btn btn-warning">Encherir maintenant</a></div><br />*@
+            </div>
+
+        }
+    </div>
+}

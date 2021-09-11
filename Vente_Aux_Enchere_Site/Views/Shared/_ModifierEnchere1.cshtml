@@ -1,0 +1,122 @@
+﻿
+@model Vente_Aux_Enchere_Site.Models.Bien
+
+
+
+
+
+   
+
+
+
+@using (Html.BeginForm("UpdateEnchere", "Bien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    
+        @Html.AntiForgeryToken()
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.BienId)
+        @Html.HiddenFor(model => model.Designation)
+        @Html.HiddenFor(model => model.Description)
+        @Html.HiddenFor(model => model.EtatBien)
+        @Html.HiddenFor(model => model.PrixInitial)
+        @Html.HiddenFor(model => model.UtilisateurId)
+        @Html.HiddenFor(model => model.DatePublication)
+        @Html.HiddenFor(model => model.DateVente)
+        @Html.HiddenFor(model => model.CategorieId)
+        @Html.HiddenFor(model => model.Photo)
+        @Html.HiddenFor(model => model.URL_Photo)
+
+        
+
+        
+            <div class="col-xs-12 col-sm-12">
+@if (Convert.ToInt32(Session["UtilisateurId"]) != Convert.ToInt32(Model.UtilisateurId))
+{
+    <h5 id="titre2">Proposer un prix superieur à @Model.PrixVente</h5>
+
+}
+                @if (Convert.ToInt32(Session["UtilisateurId"]) != Convert.ToInt32(Model.UtilisateurId))
+                    {
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.PrixVente, new { htmlAttributes = new { @class = "form-control", @placeholder = "Proposez un prix" } })
+                        @Html.ValidationMessageFor(model => model.PrixVente, "", new { @class = "text-danger" })
+                        <br /><br />
+
+
+                        <button type="submit" class="btn btn-success btn-block" ><span class="glyphicon glyphicon-floppy-disk"></span> Encherir</button>
+                        @*<a href="~/Utilisateur/AfficherUser/@Model.Utilisateur.UtilisateurId" class="btn btn-info btn-xs">@Html.DisplayFor(modelItem => Model.Utilisateur.Pseudo)</a>*@
+
+
+                    </div>
+                    }
+                
+               
+
+                    @if (Convert.ToInt32(Session["UtilisateurId"]) == Convert.ToInt32(Model.UtilisateurId))
+                    {
+                        <div class="form-group">
+                            
+                            <a onclick="Delete(@Model.BienId)" class="btn btn-warning  btn-min-block"><span class="glyphicon glyphicon-folder-close"></span> Fermer la Vente</a>
+
+                            <br /><br />
+                            </div>
+    <div class="form-group">
+        <a href="#" class="btn btn-success btn-min-block"><span class="glyphicon glyphicon-credit-card"></span> Accepter l'enchère</a>
+
+
+    </div>
+
+
+                    }
+                        </div>
+
+
+
+
+
+
+   
+
+
+
+
+
+
+}
+
+
+
+
+
+@section scripts{
+
+
+
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    <script>
+        $(function () {
+            var succesMessage = '@TempData["SuccessMessage"]'
+            if (succesMessage != '')
+                alertify.success(succesMessage);
+        });
+
+        function Delete(id) {
+            alertify.confirm('Vente aux enchères', 'Voulez vous enlever ce produit ?', function () {
+                window.location.href = '@Url.Action("RemoveBien", "Bien")/' + id;
+            }, null);
+        }
+    </script>
+       
+}

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Enchere>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mes Enchères Remportées</h2>
+
+
+@ViewBag.li
+
+
+<table class="table table-responsive table-striped ">
+    <thead class="table-heading">
+        <tr>
+
+
+            <th>
+                DateEnchere
+            </th>
+            <th>
+                Designation
+            </th>
+            <th>
+                Photo
+            </th>
+            <th>
+                PrixActuel
+            </th>
+
+            <th>
+                Pseudo
+            </th>
+
+
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @item.DateEnchere
+                </td>
+                <td>
+                    @item.Bien.Designation
+                </td>
+                <td>
+                    <img src="@item.Bien.URL_Photo/@item.Bien.Photo " width="100" height="80" />
+                </td>
+                <td>
+                    @item.PrixActuel
+                </td>
+                <td>
+                    @item.Utilisateur.Pseudo
+                </td>
+               
+
+
+            </tr>
+        </tbody>
+    }
+
+</table>

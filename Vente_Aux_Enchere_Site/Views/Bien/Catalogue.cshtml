@@ -1,0 +1,72 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Bien
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@if (Session["Pseudo"] != null)
+{
+
+    <p>Bienvenue @Session["Pseudo"].ToString()</p>
+
+}*@
+
+@*@if (Request.Cookies["Pseudo"] != null)
+{
+
+    <p>Bienvenue @Request.Cookies["Pseudo"].Value</p>
+
+}*@
+@*@if (User.Identity.IsAuthenticated)
+{
+
+    <p>Bienvenue @User.Identity.Name</p>
+
+}*@
+
+                       
+<h2>Catalogue des produits</h2>  
+
+
+@foreach (var data in ViewBag.liste_categorie)
+{
+    <div class="row col-xs-12 well">
+        <div style="background-color:#808080;font-size:16px;color:#000000">
+            <h3 class="glyphicon-align-center">@data.NomCategorie</h3>
+        </div>
+        <br />
+        @foreach (var produit in data.Biens)
+        {
+            <div class="col-xs-12 col-sm-3">
+                <div>Temps restant: </div><br />
+                @*<div><a href="~/Utilisateur/AfficherUser/@produit.UtilisateurId">Contacter le vendeur</a></div><br />*@
+                @*<div class=" pull-right label-primary">Prix Initial: $ @produit.PrixInitial </div>*@
+                <span class=" pull-left label label-primary" style="color:#ffffff"><h5> $ @produit.PrixVente  </h5></span>
+                <div class="lead"><img src="@produit.URL_Photo/@produit.Photo " width="100" height="80" title="Encherir" /></div>
+                <div> @produit.Description</div><br />
+                
+                <div><a href="~/Bien/Index1/@produit.BienId" class=" btn btn-default"><strong>  Encherir maintenant</strong> </a></div><br />
+                @*<div><a href="~/Bien/ModifierEnchere/@produit.BienId" class=" btn btn-warning">Encherir maintenant</a></div><br />*@
+                @*<div><a href="~/Enchere/DetailEnchere/@produit.BienId" >Detail Enchère</a></div><br />*@
+            </div>
+
+        }
+    </div>
+}
+
+@section scripts{
+    <script>
+            $(function () {
+                var succesMessage = '@TempData["SuccessMessage"]'
+                if (succesMessage != '')
+                    alertify.success(succesMessage);
+            });
+
+            function Delete(id) {
+                alertify.confirm('Vente aux enchères', 'Voulez vous supprimer cet enregistrement ?', function () {
+                    window.location.href = '@Url.Action("RemoveBien", "Bien")/' + id;
+                }, null);
+            }
+    </script>
+    
+
+}

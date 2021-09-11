@@ -1,0 +1,19 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Bien
+@{
+    ViewBag.Title = "Index1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("ModifierEnchere1");}
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("DetailEnchere1", "Enchere");}
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+        @{Html.RenderAction("AfficherBien1");}
+    </div>
+</div>

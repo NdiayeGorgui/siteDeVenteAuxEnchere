@@ -1,0 +1,31 @@
+﻿
+@model Vente_Aux_Enchere_Site.Models.Bien
+
+<div>
+    <h5 id="titre1">Détail Enchère</h5>
+    @*<p>
+        Nombre enchère: [@ViewBag.liste_ens ]
+    
+    </p>*@
+    @*<p>
+        Dernière enchère:@Model.detaienchere.PrixActuel
+    </p>
+    <p>
+        Nom du client:@Model.detaienchere.Utilisateur.Pseudo
+    </p>*@
+ </div>
+
+
+
+
+
+
+
+
+
+<script>
+    document.getElementById('titre1').style.textAlign='right'
+        document.getElementById('titre1').style.color = 'orange';
+        document.getElementById('titre1').style.fontSize = '30px';
+        document.getElementById('titre1').style.marginLeft = '30px';
+</script>

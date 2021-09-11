@@ -1,0 +1,70 @@
+﻿@model Vente_Aux_Enchere_Site.Models.Utilisateur
+@{
+    ViewBag.Title = "Afficher User";
+}
+
+<div>
+    <h4>Détail Vendeur</h4>
+    <hr />
+
+
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pseudo)
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pseudo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prenom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+
+
+
+    </dl>
+</div>
+
+
+<div>
+    <a href='javascript:history.go(-1)'>Retour à la page precedente</a>
+</div>

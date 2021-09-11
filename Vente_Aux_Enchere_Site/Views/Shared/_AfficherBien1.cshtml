@@ -1,0 +1,133 @@
+﻿
+@model Vente_Aux_Enchere_Site.Models.Bien
+
+@{
+
+}
+
+<div>
+    <h5 id="titre">Détail Produit</h5>
+  
+
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie.NomCategorie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie.NomCategorie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+       
+
+        <dd>
+
+
+            <img src="@Model.URL_Photo/@Model.Photo " width="100" height="80" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtatBien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtatBien)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixInitial)
+        </dt>
+
+        <dd>
+            $  @Html.DisplayFor(model => model.PrixInitial)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixVente)
+        </dt>
+
+        <dd>
+            $  @Html.DisplayFor(model => model.PrixVente)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePublication)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatePublication)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateVente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateVente)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Utilisateur.Pseudo) du Vendeur
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utilisateur.Pseudo) 
+@if (Convert.ToInt32(Session["UtilisateurId"]) != Convert.ToInt32(Model.UtilisateurId))
+                    {
+
+            <a href="~/Utilisateur/AfficherUser/@Model.Utilisateur.UtilisateurId" class="btn btn-info btn-block">Contacter le Vendeur</a>
+            <a href="~/Evaluation/Index/" class="btn btn-info btn-block">Information sur le Vendeur</a>
+
+}  
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Utilisateur.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utilisateur.Telephone)
+        </dd>*@
+        
+        
+       
+    </dl>
+
+   
+   
+</div>
+
+
+
+
+@section scripts{
+
+
+    
+
+    <script>
+        $(function () {
+            var succesMessage = '@TempData["SuccessMessage"]'
+            if (succesMessage != '')
+                alertify.success(succesMessage);
+        });
+
+        function Delete(id) {
+            alertify.confirm('Vente aux enchères', 'Voulez vous enlever ce produit ?', function () {
+                window.location.href = '@Url.Action("RemoveBien", "Bien")/' + id;
+            }, null);
+        }
+    </script>
+}

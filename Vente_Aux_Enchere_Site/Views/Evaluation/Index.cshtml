@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Vente_Aux_Enchere_Site.Models.Evaluation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Notes des Vendeurs</h2>
+
+<p>
+    @Html.ActionLink("Nouvelle Evaluation", "NewEvaluation")
+</p>
+<table class="table table-responsive table-striped ">
+    <thead class="table-heading">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Note)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Utilisateur.Pseudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateEvaluation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comentaire)
+
+            </th>
+            <th>
+               Evalué par
+
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Note)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Utilisateur.Pseudo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateEvaluation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comentaire)
+
+                </td>
+               
+        
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.EvaluationId }) |*@
+                    @Html.ActionLink("Details", "AfficherEvaluation", new { id = item.EvaluationId }) |
+                    @*@Html.ActionLink("Delete", "Delete", new { id = item.EvaluationId })*@
+                </td>
+               
+            </tr>
+        </tbody>
+    }
+
+</table>
+laisser une evaluation

@@ -1,0 +1,104 @@
+﻿
+@model PagedList.IPagedList<Vente_Aux_Enchere_Site.Models.Utilisateur>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@using PagedList.Mvc;
+@using PagedList;
+
+
+
+@*@if (Request.Cookies["Pseudo"] != null)
+{
+
+    <p>Bienvenue @Request.Cookies["Pseudo"].Value</p>
+
+}*@
+
+@if (Session["Pseudo"] != null)
+    {
+
+        <p>Bienvenue @Session["Pseudo"].ToString()</p>
+
+    }
+<h2>Annuaire des Utilisateurs</h2>
+
+
+<section class="body-content">
+
+
+    <br />
+
+    <div class="container">
+        <form method="get" asp-action="Index">
+
+            <label>Mot clé:</label>
+            <input type="text" name="motcle" value="@ViewBag.motcle" placeholder="Entrez le pseudo " /><br />
+            <button type="submit" class="btn btn-primary">Chercher</button>
+        </form><br />
+    </div>
+    <div class="container">
+        <table class="table table-responsive table-striped ">
+            <thead class="table-heading">
+                <tr>
+                    <th class="align-center">Pseudo</th>
+                    <th class="align-center">Prenom </th>
+                    <th class="align-center">Nom </th>
+
+                    <th class="align-center">Email</th>
+
+                    <th class="align-center">Adresse</th>
+                    <th class="align-center">Téléphone</th>
+                    <th class="align-center">Date Adhesion</th>
+                   
+                    @if (User.IsInRole("Administrateur"))
+                    {
+                        <th class="align-center">Operation</th>
+                    }
+                </tr>
+            </thead>
+            @foreach (var data in ViewBag.liste_utilisateur)
+            {
+                <tbody>
+                    <tr>
+
+                        <td class="align-center">  @data.Pseudo</td>
+                        <td class="align-center">@data.Prenom</td>
+                        <td class="align-center">@data.Nom</td>
+
+                        <td class="align-center">@data.Mail</td>
+
+                        <td class="align-center">@data.Adresse</td>
+                        <td class="align-center">@data.Telephone</td>
+                        <td class="align-center">@data.DateAdhesion</td>
+                        @if (User.IsInRole("Administrateur"))
+                        {
+                            <td>  <a onclick="Delete(@data.UtilisateurId)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span>Supprimer</a></td>
+                        }
+
+                    </tr>
+                </tbody>
+            }
+        </table>
+        Page  @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+        @Html.PagedListPager(Model, page_user => Url.Action("Index", "Utilisateur", new { page_user = page_user }))
+    </div>
+</section>
+
+@section scripts{
+    <script>
+        $(function () {
+            var succesMessage = '@TempData["SuccessMessage"]'
+            if (succesMessage != '')
+                alertify.success(succesMessage);
+        });
+
+        function Delete(id) {
+            alertify.confirm('Vente aux enchères', 'Voulez vous supprimer cet enregistrement ?', function () {
+                window.location.href = '@Url.Action("RemoveUser", "Utilisateur")/'+id;
+            }, null);
+        }
+    </script>
+}
